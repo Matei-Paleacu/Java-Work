@@ -1,0 +1,9 @@
+cat
+ape
+eel
+cow
+chicken
+rat
+elephant
+monkey
+panz

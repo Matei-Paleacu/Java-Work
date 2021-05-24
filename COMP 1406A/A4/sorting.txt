@@ -1,0 +1,38 @@
+A)
+[QD,9D,JD,AD] - Starting list
+[9D,QD,JD,AD] - compares QD to 9D which returns 1 which is > 0 so it swaps
+[9D,QD,JD,AD] - compares QD to JD since with OtherCard all face cards are the same so 0 > 0 so no swap
+[9D,QD,AD,JD] - compares JD to AD which return 1 which is > 0 so it swaps
+[9D,AD,QD,JD] - compares QD to AD which returns 1 which is > 0 so it swaps
+[AD,9D,QD,JD] - compares 9D to AD which returns 1 which is > 0 so it swaps
+
+Ouput:
+[AD,9D,QD,JD]
+
+B)
+[QD,9D,JD,AD] - Starting list
+[9D,QD,JD,AD] - compares QD to 9D which returns 1 which is > 0 so it swaps
+[9D,QD,JD,AD] - compared QD to JD, since QD is OtherCard it calls its compare too so they are both equal 0 > 0 so no swap
+[9D,QD,JD,AD] - compare JD to AD, since JD is a Card it calls its compare, in the card class ace is larger then jack so it will return -1 which is -1 > 0 so no swap
+
+Ouput:
+[9D,QD,JD,AD]
+
+C)
+[QD,9D,JD,AD] - Starting list
+[9D,QD,JD,AD] - compare 9D to QD which return -1 is < 0 so it swaps
+[9D,JD,QD,AD] - compares JD to QD which calls the JD compare which will return -1 < 0 so it swaps since the Q is larger then J in the Card class
+[9D,JD,AD,QD] - compares AD to QD which return -1 is < 0 so it swaps
+
+Ouput:
+[9D,JD,AD,QD]
+
+
+For test A the output was [AD,9D,QD,JD], for test B the output was [9D,QD,JD,AD], for test C the ouput was [9D,JD,AD,QD].
+The sorted list are idfferent as a result of one main reasons which is which overrided comapreTo was called (based on the class type of the first
+past in the statment). The version of the if statment did paly a roll in this however the main difference 
+was the compareTo. This was beacase in the Card class there are not values that are eqaul something must be greator or smaller, however
+in the OtherCard clas the Jack King and Queen where all equal in value.Furthermore the overall value of the ace was different, in the Card
+class the Ace was the card with the highest RANK where as in the OtherCard class it was the second lowest. These two differences
+changed the comapreTo waht was being called and resulted in a different list output in each test case.
+

@@ -1,0 +1,9 @@
+Tutorial 2:
+
+Adrien: Present, basic functions are well understood. Knows that some functions are present but still need to look up the names.
+Mihai: Present, Spot on, knows the material and could easily breathe throug and explain how to do the exercises as well as explain why something works the way it does
+Matei: Present, good understanding of these weeks code, started to learn how to manipulate and work with matrix's in java.
+Will: Present, content of this weeks tutorial was understood well. Group collaboration was smooth and efficient.
+Cameron: Present,
+Edi: Present, 
+Tutorial 3:

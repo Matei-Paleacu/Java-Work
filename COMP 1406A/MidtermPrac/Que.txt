@@ -1,0 +1,65 @@
+
+QUE:
+remove(Q,index){
+    var element;
+    var first;
+    int j = 0;
+    for(int i = 0; i<Q.size();i++){
+        if(Q.peek() == index){
+            element = Q.dequeue();
+        } else{
+            Q.enqueue(Q.peek());
+        }
+    }
+    return element;
+}
+
+STACK:
+
+remove(S,item){
+    int occurences = 0;
+    var element;
+    Stack S_2 = [];
+
+    for(int i = 0; i<S.size(), i++){
+        if(S.peek() == item){
+            occurences++;
+            S.pop();
+        }
+        else{
+            element = S.pop();
+            S_2.push(element);
+        }
+    }
+    S.clear();
+    for(int i = 0; i<S_2.size(); i++){
+        element = S_2.pop()
+        S.push(element)
+    }
+    return occurences;
+}
+
+public class PersonSample extends Person implements Comparable<PersonSample>{
+
+    public PersonSample(String name, int age, String birthCity){
+        super(name,age,birthCity);
+    }
+
+    public int compareTo(PersonSample one){
+        if(this.age < one.age){
+            return -1;
+        }
+        if(this.age > one.age){
+            return 1;
+        }else{
+            if(this.name.length() < one.name.length()){
+                return -1;
+            }
+            if(this.name.length() < one.name.length()){
+                return -1;
+            }else{
+                return 0;
+            }
+        }
+    }
+}

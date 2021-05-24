@@ -1,0 +1,22 @@
+public remove(S,item){
+    int occurences = 0;
+    var element;
+    Stack S_2 = [];
+    var[];
+    var item;
+    for(int i = 0; i<S.size() ;i++){
+        if(S.peek() == item){
+            occurences++;
+            S.pop();
+        }else{
+            element = S.pop()
+            var.add(element);
+        }
+    }
+
+    for(int i = var.length(); i>0 ;i--){
+        item = var[i];
+        S_2.push(item);
+    }
+    return occurences;
+}

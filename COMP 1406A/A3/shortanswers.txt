@@ -1,0 +1,15 @@
+A)This would not be a good idea as first off there would be ALOT of different 
+subclasses for each roll. This would cause alot of confusion and disorganize the code 
+alot. Instead there would just be a couple of different rolls each one with different
+privilages, and the could be renaimed to whatever like the admin one could be renamed to
+teacher in that persons server and the basic class with few acces options could be
+renamed to student if wanted(just by adding a name feature to each roll. 
+This would simplify the code  and just make it much more easier to us overall. 
+
+B)Having an abstract ChessPiece with several subclasses would be a good idea. This
+is beacuase first each of the subclasses would be required to inherite the
+chesspiece atributes which as the basic attributes for each piece. Then within each
+specified class they will have there own unique attribues such as the king is only able 
+to move one space in each dirrection, or a pawn can only go forward unless he is
+taking a peice. This code style would be very efficient and would clearly
+separate each class for the other aloowing it to be simple.
